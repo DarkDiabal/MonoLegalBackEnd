@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MonoLegal.Api</name>
+    </assembly>
+    <members>
+        <member name="T:MonoLegal.Api.Controllers.InvoiceController">
+            <summary>
+            Controller for invoices operations
+            </summary>
+        </member>
+        <member name="M:MonoLegal.Api.Controllers.InvoiceController.#ctor(MonoLegal.Business.Interfaces.IInvoiceBusiness)">
+            <summary>
+            Constructor for invoice controller
+            </summary>
+            <param name="invoiceBusiness"></param>
+        </member>
+        <member name="M:MonoLegal.Api.Controllers.InvoiceController.Get">
+            <summary>
+            Get all invoices 
+            </summary>
+            <returns>List of invoices</returns>
+        </member>
+        <member name="M:MonoLegal.Api.Controllers.InvoiceController.Put(MonoLegal.Core.Models.Request.InvoiceRequestBindingModel)">
+            <summary>
+            Methof for update invoice
+            </summary>
+            <param name="model">Invoice request binding model</param>
+            <returns></returns>
+        </member>
+        <member name="T:MonoLegal.Api.Mappings.MappingProfile">
+            <summary>
+            Automapper class
+            </summary>
+        </member>
+        <member name="M:MonoLegal.Api.Mappings.MappingProfile.#ctor">
+            <summary>
+            Config automapper 
+            </summary>
+        </member>
+        <member name="T:MonoLegal.Api.Program">
+            <summary>
+            Program class
+            </summary>
+        </member>
+        <member name="M:MonoLegal.Api.Program.Main(System.String[])">
+            <summary>
+            Methos main
+            </summary>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:MonoLegal.Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Methos for create host builder
+            </summary>
+            <param name="args">Arguments</param>
+            <returns>Host builder</returns>
+        </member>
+        <member name="T:MonoLegal.Api.Startup">
+            <summary>
+            Startup Class
+            </summary>
+        </member>
+        <member name="M:MonoLegal.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor for startup 
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:MonoLegal.Api.Startup.Configuration">
+            <summary>
+            Property for configuration 
+            </summary>
+        </member>
+        <member name="M:MonoLegal.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:MonoLegal.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
