@@ -94,6 +94,12 @@ namespace MonoLegal.Api
 
             app.UseRouting();
 
+            app.UseCors(builder => {
+                builder.AllowAnyOrigin();
+                builder.AllowAnyMethod();
+                builder.AllowAnyHeader();
+            });
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -70,6 +70,9 @@ namespace MonoLegal.Business.Implementations
                     foreach (var item in invoicesLst)
                     {
                         var invoice = _mapper.Map<InvoiceEntity, InvoiceResponseBindingModel>(item);
+                        invoice.PaidText = item.Paid ? "Si" : "No";
+                        invoice.CreatedAt = item.CreatedAt.ToString("MM/dd/yyyy");
+                        invoice.PaidAt = item.PaidAt.ToString("MM/dd/yyyy");
                         resultInvoiceList.Add(invoice);
                     }
 

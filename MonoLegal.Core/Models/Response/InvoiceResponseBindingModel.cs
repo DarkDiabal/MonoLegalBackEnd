@@ -17,9 +17,10 @@ namespace MonoLegal.Core.Models.Response
         public decimal InvoiceSubTotal { get; set; }
         public decimal Iva { get; set; }
         public decimal Retention { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public string CreatedAt { get; set; }
         public string Status { get; set; }
         public bool Paid { get; set; }
-        public DateTime PaidAt { get; set; }
+        public string PaidText { get; set; }
+        public string PaidAt { get; set; }
     }
 }
