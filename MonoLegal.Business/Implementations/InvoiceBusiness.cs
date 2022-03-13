@@ -117,11 +117,11 @@ namespace MonoLegal.Business.Implementations
                             template = await BuildTemplate(ReminderTypeTemplate.SegundoRecordatorio, model);
                             break;
                         default:
-                            response.Succeeded = false;
+                            response.Succeeded = true;
                             response.ErrorResult = new ErrorMessageBindingModel
                             {
                                 Code = Convert.ToString((int)HttpStatusCode.OK),
-                                Message = $"La factura a editar no se encontro."
+                                Message = $"Tipo de notificación no encontrado."
                             };
                             return response;
                     }
@@ -131,19 +131,19 @@ namespace MonoLegal.Business.Implementations
                     if (sendEmail)
                     {
                         response.Succeeded = true;
-                        response.Result = "Notificación enviada exitosamente";
+                        response.Result = "Notificación enviada exitosamente.";
                     }
                     else
                     {
-                        response.Succeeded = false;
-                        response.Result = "No pudimos enviar la notificación";
+                        response.Succeeded = true;
+                        response.Result = "No pudimos enviar la notificación.";
                     }
 
                     
                 }
                 else
                 {
-                    response.Succeeded = false;
+                    response.Succeeded = true;
                     response.ErrorResult = new ErrorMessageBindingModel
                     {
                         Code = Convert.ToString((int)HttpStatusCode.OK),

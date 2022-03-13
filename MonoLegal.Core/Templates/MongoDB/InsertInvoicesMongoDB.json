@@ -1,0 +1,44 @@
+{
+    "InvoiceCode" : "P-00001",
+    "Client" : "Motos SAS",
+    "ClientEmail" : "juansaboya@gmail.com",
+    "City" : "Bogotá D.C",
+    "Nit" : "111.111.111-7",
+    "InvoiceTotal" : 29750,
+    "InvoiceSubTotal" : 25000,
+    "Iva" : 4750,
+    "Retention" : 1150,
+    "CreatedAt" : ISODate("2017-10-13T10:53:53.000Z"),
+    "Status" : "PrimerRecordatorio",
+    "Paid" : false
+}
+
+{
+    "InvoiceCode" : "P-00002",
+    "Client" : "Construcción SAS",
+    "ClientEmail" : "juansaboya@gmail.com",
+    "City" : "Bogotá D.C",
+    "Nit" : "777.777.777-7",
+    "InvoiceTotal" : 56882,
+    "InvoiceSubTotal" : 47800,
+    "Iva" : 9082,
+    "Retention" : 0,
+    "CreatedAt" : ISODate("2017-10-13T10:53:53.000Z"),
+    "Status" : "PrimerRecordatorio",
+    "Paid" : false
+}
+
+{
+    "InvoiceCode" : "P-00003",
+    "Client" : "Buses SAS",
+    "ClientEmail" : "juansaboya@gmail.com",
+    "City" : "Bogotá D.C",
+    "Nit" : "222.222.222-7",
+    "InvoiceTotal" : 58310,
+    "InvoiceSubTotal" : 49000,
+    "Iva" : 9310,
+    "Retention" : 0,
+    "CreatedAt" : ISODate("2017-10-13T10:53:53.000Z"),
+    "Status" : "PrimerRecordatorio",
+    "Paid" : false
+}
